@@ -1,28 +1,10 @@
-public class InitializedObject {
-    private static int staticInitializationCounter;
-    private int instanceInitializationCounter;
-
-    // Статичний блок ініціалізації
-    static {
-        staticInitializationCounter = 1;
-        System.out.println("Статичний блок ініціалізації: " + staticInitializationCounter);
-    }
-
-    // Нестатичний блок ініціалізації
-    {
-        instanceInitializationCounter = 1;
-        System.out.println("Нестатичний блок ініціалізації: " + instanceInitializationCounter);
-    }
-
-    // Конструктор
-    public InitializedObject() {
-        System.out.println("Конструктор: " + instanceInitializationCounter);
-        instanceInitializationCounter++;
-    }
-
+// Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
+// then press Enter. You can now see whitespace characters in your code.
+public class Main {
     public static void main(String[] args) {
-        InitializedObject obj1 = new InitializedObject();
-        InitializedObject obj2 = new InitializedObject();
-        InitializedObject obj3 = new InitializedObject();
+
+       InitObject initObject = new InitObject();
+
+
     }
 }
